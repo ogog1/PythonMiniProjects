@@ -10,16 +10,35 @@ else:
 
 score = 0
 
-
-Question1 = "What element does O represent on the periodic table? "
-answer1 = input(Question1)
+while True:
+    Question1 = "What element does O represent on the periodic table? "
+    answer1 = input(Question1)
 
     if answer1 == "oxygen" or answer1 == "Oxygen" or answer1 == "OXYGEN":
         score = score + 1
         print(f"That's correct! Your score is {score}/10.")
+        break
     else:
         print(f"Sorry,that's not correct... Your score is {score}/10.")
-        again = input("Want to try again?")
-        if "n" in again[0] or "N" in again[0]:
+        again = input("Want to try again? ")
+        if "y" in again[0] or "Y" in again[0]:
+            True
+        else:
+            print("Next question!")
+            break
+while True:
+    Question2 = "How many makes up a baker's dozen? "
+    answer2 = input(Question2)
 
-
+    if answer2 == "13":
+        score = score + 1
+        print(f"That's correct! Your score is {score}/10.")
+        break
+    else:
+        print(f"Sorry,that's not correct... Your score is {score}/10.")
+        again = input("Want to try again? ")
+        if "y" in again[0] or "Y" in again[0]:
+            True
+        else:
+            print("Next question!")
+            break
