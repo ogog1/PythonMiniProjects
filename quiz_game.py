@@ -12,9 +12,9 @@ score = 0
 
 while True:
     Question1 = "What element does O represent on the periodic table? "
-    answer1 = input(Question1)
+    answer1 = input(Question1).lower()
 
-    if answer1 == "oxygen" or answer1 == "Oxygen" or answer1 == "OXYGEN":
+    if answer1 == "oxygen":
         score = score + 1
         print(f"That's correct! Your score is {score}/5.")
         break
@@ -45,9 +45,9 @@ while True:
 
 while True:
     Question3 = "What's the capital of Spain? "
-    answer3 = input(Question3)
+    answer3 = input(Question3).lower()
 
-    if answer3 == "madrid" or answer3 == "Madrid" or answer3 == "MADRID":
+    if answer3 == "madrid":
         score = score + 1
         print(f"That's correct! Your score is {score}/5.")
         break
@@ -62,9 +62,9 @@ while True:
 
 while True:
     Question4 = "Which fictional city is the home of Batman? "
-    answer4 = input(Question4)
+    answer4 = input(Question4).lower()
 
-    if "Gotham" in answer4 or "gotham" in answer4 or "GOTHAM" in answer4:
+    if "gotham" in answer4:
         score = score + 1
         print(f"That's correct! Your score is {score}/5.")
         break
@@ -79,9 +79,9 @@ while True:
 
 while True:
     Question5 = "What color is the circle on the Japanese national flag? "
-    answer5 = input(Question5)
+    answer5 = input(Question5).lower()
 
-    if answer5 == "red" or answer5 == "Red" or answer5 == "RED":
+    if answer5 == "red":
         score = score + 1
         print(f"That's correct! Your score is {score}/5.")
         break
