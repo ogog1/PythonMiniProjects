@@ -2,7 +2,7 @@ print("Hi! Welcome to my quiz!")
 
 playing = input("Want to take the quiz? (Y/N) ")
 
-if "y" in playing[0] or "Y" in playing[0]:
+if playing[0] in ["y", "Y"]:
     print("Let's play")
 else:
     print("Maybe later...")
@@ -20,8 +20,8 @@ while True:
         break
     else:
         print(f"Sorry,that's not correct... Your score is {score}/5.")
-        again = input("Want to try again? ")
-        if "y" in again[0] or "Y" in again[0]:
+        again = input("Want to try again? ").lower()
+        if again[0] == "y":
             True
         else:
             print("Next question!")
@@ -36,8 +36,8 @@ while True:
         break
     else:
         print(f"Sorry,that's not correct... Your score is {score}/5.")
-        again = input("Want to try again? ")
-        if "y" in again[0] or "Y" in again[0]:
+        again = input("Want to try again? ").lower()
+        if again[0] == "y":
             True
         else:
             print("Next question!")
@@ -53,8 +53,8 @@ while True:
         break
     else:
         print(f"Sorry,that's not correct... Your score is {score}/5.")
-        again = input("Want to try again? ")
-        if "y" in again[0] or "Y" in again[0]:
+        again = input("Want to try again? ").lower()
+        if again[0] == "y":
             True
         else:
             print("Next question!")
@@ -70,8 +70,8 @@ while True:
         break
     else:
         print(f"Sorry,that's not correct... Your score is {score}/5.")
-        again = input("Want to try again? ")
-        if "y" in again[0] or "Y" in again[0]:
+        again = input("Want to try again? ").lower()
+        if again[0] == "y":
             True
         else:
             print("Next question!")
@@ -87,8 +87,8 @@ while True:
         break
     else:
         print(f"Sorry,that's not correct... Your score is {score}/5.")
-        again = input("Want to try again? ")
-        if "y" in again[0] or "Y" in again[0]:
+        again = input("Want to try again? ").lower()
+        if again[0] == "y":
             True
     break
 
